@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assending-desending-number</title>
+</head>
+<body>
+    <h2 style="background-color: darkolivegreen; color: white; text-align: center;">Assanding Number..............</h2>
+
+    <script>
+
+//main system.............
+
+        //    var number1=(prompt("pleace enter 1st num:" ));
+        //    var number2=(prompt("pleace  enter 2nd num:" ));
+        //    var number3=(prompt("pleace enter 3rd num: " ));
+        //    var Result=[number1,number2,number3]
+        // Result.sort((a,b)=>b-a);
+        // document.write("Desending-number :"+Result );
+
+
+// largest number...........
+
+        //    var number1=(prompt("pleace enter 1st num:" ));
+        //    var number2=(prompt("pleace  enter 2nd num:" ));
+        //    var number3=(prompt("pleace enter 3rd num: " ));
+      
+
+
+        // if(number1>number2 && number1>number3){
+        //                 document.write("big number:"+ number1)
+        // }
+        // else if(number2>number1 && number2>number3){
+        //             document.write("big number:"+ number2)
+        // }
+        // else{
+        //     document.write("big number:"+ number3)
+        // }
+
+
+
+
+// use funtion Ascending Order.............
+
+//         let num1 = parseFloat(prompt("Enter the first number:"));
+//         let num2 = parseFloat(prompt("Enter the second number:"));
+//         let num3 = parseFloat(prompt("Enter the third number:"));
+
+// if (num1 <= num2 && num1 <= num3) {
+//     if (num2 <= num3) {
+//         document.write("Ascending Order: " + num1 + ", " + num2 + ", " + num3);
+//     }else {
+//         document.write("Ascending Order: " + num1 + ", " + num3 + ", " + num2);
+//     }
+// } 
+// else if (num2 <= num1 && num2 <= num3) {
+//     if (num1 <= num3) {
+//         document.write("Ascending Order: " + num2 + ", " + num1 + ", " + num3);
+//     } else {
+//         document.write("Ascending Order: " + num2 + ", " + num3 + ", " + num1);
+//     }
+// }
+//  else {
+//     if (num1 <= num2) {
+//         document.write("Ascending Order: " + num3 + ", " + num1 + ", " + num2);
+//     } else {
+//         document.write("Ascending Order: " + num3 + ", " + num2 + ", " + num1);
+//     }
+// }
+
+
+
+
+// use funtion Descending Order.............
+//             let num1 = parseFloat(prompt("Enter the first number:"));
+//             let num2 = parseFloat(prompt("Enter the second number:"));
+//             let num3 = parseFloat(prompt("Enter the third number:"));
+
+// if (num1 >= num2 && num1 >= num3) {
+//     if (num2 >= num3) {
+//         document.write("Descending Order: " + num1 + ", " + num2 + ", " + num3);
+//     } else {
+//         document.write("Descending Order: " + num1 + ", " + num3 + ", " + num2);
+//     }
+// }
+//  else if (num2 >= num1 && num2 >= num3) {
+//     if (num1 >= num3) {
+//         document.write("Descending Order: " + num2 + ", " + num1 + ", " + num3);
+//     } else {
+//         document.write("Descending Order: " + num2 + ", " + num3 + ", " + num1);
+//     }
+// } 
+// else {
+//     if (num1 >= num2) {
+//         document.write("Descending Order: " + num3 + ", " + num1 + ", " + num2);
+//     } else {
+//         document.write("Descending Order: " + num3 + ", " + num2 + ", " + num1);
+//     }
+// }
+
+
+
+
+//by madam---------------------------
+
+
+    // a<b<c
+// a<b
+// a<c
+// b<c
+
+    
+    var number1 = prompt("Enter a number1......");
+    var number2 = prompt("Enter a number2......");
+    var number3 = prompt("Enter a number3.......");
+        if (number1>number2) { 
+            temp = number1;
+            number1 = number2;
+            number2 = temp;
+        }
+         if (number1>number3) { 
+            temp = number3;
+            number3 = number1;
+            number1 = temp;
+         }
+         if (number2>number3) { 
+            temp = number2;
+            number2 = number3;
+            number3 = temp;
+         }
+         document.write(number1+","+number2+","+number3);
+    
+
+        
+    </script>
+</body>
+</html>

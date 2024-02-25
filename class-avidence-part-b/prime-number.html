@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number</title>
+</head>
+<body>
+    <h4 style="background-color: darkolivegreen; text-align: center;">prime number</h4> <hr>
+
+
+    <script>
+
+        
+ let userInput = parseFloat(prompt("Pleace enter your number:  "));
+       let count = 0;
+        if(userInput==0 || userInput==1){
+            document.write("not logicable number!");
+        }
+        else{
+           
+        for(i=2; i < userInput; i++){
+        if(userInput % i == 0){
+            count++;
+            break;
+            }
+    
+            }
+        
+        if (count == 0){
+            document.write("Ans: prime number. ");
+        }
+        else{
+        document.write("Ans: Sorry, Not prime number. ");
+        }  
+               
+     }  
+
+    </script>
+</body>
+</html>

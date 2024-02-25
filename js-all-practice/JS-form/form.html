@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Student Admission</title>
+
+</head>
+
+<body>
+<form action="#" method="post" name="f" style="width:300px; margin:0px auto; border:4px solid gray; padding:10px; background-color: rgb(161, 148, 142);">
+  <legend style="color: aquamarine;">Student personal information</legend>
+  <hr>
+  <div>Name<br/>
+  <input type="text" name="txtName" />
+  </div>
+  <br>
+  
+  <div>Address<br/>
+  <textarea  name="txtAddress" ></textarea>
+  </div>
+  <br>
+  <div>Email<br/>
+    <input type="text" name="Email" placeholder="Enter your email" />
+  </div>
+  <br>
+  
+  <div>Course<br/>
+  <select name="txtCourse" >
+    <option value="MBA">WDPF</option>
+    <option value="BBA">C#</option>
+    <option value="CIS">JAVA</option>
+    <option value="EEE">NETWORKING</option>
+    <option value="EEE">DATABASE</option>
+    <option value="EEE">VIDEA-EDITING</option>
+  </select>
+  </div>
+  <br>
+  
+  <div>Sex :<br/>
+   Male<input type="radio" name="rdoSex" value="Male" />
+   Female<input type="radio" name="rdoSex" value="Female" />  
+   Other<input type="radio" name="rdoSex" value="Other" />  
+  </div>
+  <br>
+  
+  <div>Subject :<br/>
+   English<input type="checkbox" value="English" name="chkSubject" />
+   Bengali<input type="checkbox" value="Bengali" name="chkSubject" />
+   
+    Math<input type="checkbox" value="Math" name="chkSubject" />
+  </div>
+  <br>
+  
+  <div>
+  <input type="button" onclick="dyn_window()" value="Submit" />
+  </div>
+</form>
+</body>
+
+
+<script>
+ 
+function dyn_window(){  
+  
+
+  
+  var name=document.f.txtName.value;
+  var address=document.f.txtAddress.value;
+  var course=document.f.txtCourse.value;
+  var Email=document.f.Email.value;
+  
+  var sex="";
+  var subject="";
+  
+  //check if radio button is selected and read selected value 
+  for (i=0;i<document.f.rdoSex.length;i++) {
+     if (document.f.rdoSex[i].checked) {
+    sex = document.f.rdoSex[i].value;
+    }
+    }
+  
+  for(j=0;j<document.f.chkSubject.length;j++){
+  
+    if (document.f.chkSubject[j].checked) {
+      subject+=document.f.chkSubject[j].value+", ";
+      }
+  }
+  
+ 
+   // create new window here
+  
+    a=open('','','width=400px,height=400px')
+  
+  with(a.document){
+    // write("<html>");
+    // write("<head><title>"+title+"</title></head>");
+    // write("<body>");
+    
+    write("<div style='border:1px solid gray'>Name:"+name+"<br/>");
+    write("Address:"+address+"<br/>");
+    write("Email:"+Email+"<br/>");
+    write("Course:"+course+"<br/>");
+    write("Sex:"+sex+"<br/>");
+    write("Subject:"+subject+"<br/></div>");
+    write("<input type='button' value='Close me' onclick='self.close();' />");
+    write("<input type='button' value='Print' onclick='self.print();' />");
+    write("</body>");
+    write("</html>");
+  }
+   
+}// end the function 
+ 
+ </script>
+
+
+</html>

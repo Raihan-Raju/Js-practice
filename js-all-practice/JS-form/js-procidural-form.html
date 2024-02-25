@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-procidural form-practice</title>
+</head>
+<body>
+    <marquee style="background-color: black;color: red;" behavior="" direction=""><h2>Md Raihan Molla Raju <br> ID :1280641  (Mountly fainal Exam of Data Submit of Form and Data Validation)</h2></marquee>
+
+    <center style="background-color: darkorange; height: 500px;">
+        <form action="#" name="frm" >
+
+            <fieldset style="width: 600px; text-align: center; background-color: rgb(107, 95, 83);" >
+    
+                <legend style="text-align:center; border: 1px solid; background-color: bisque; border-radius: 5px;">Form & Data Submit</legend>
+                
+                        <input type="text" name="txtName" placeholder="Enter your name">
+
+                     
+                        
+                <input  type="number" name="textNumber" placeholder="Please Enter your number"><br>
+                <input style="margin-top: 5px;"  type="text" name="textEmail" placeholder="Please Enter your email">
+                <input  type="text" name="textID" placeholder="Please Enter your Id:"><br>
+
+                
+
+                <label >Address</label>:<br>
+                        <textarea name="addr"></textarea>
+                        <br>
+                
+    
+                <label for="">Gender  :</label> <br>
+                   <input type="radio" name="a" id="m">
+                       <label for="m">male</label>
+                       
+                   <input type="radio" name="a" id="f">
+                       <label for="f">Female</label>
+    
+                   <input type="radio" name="a" id="o">
+                       <label for="o">other</label> <br><br><br>
+                                    
+                <input style="background-color: rgb(114, 248, 114); border-radius: 5px;" type="button" onclick="dyn_window()" value="Submit" />
+                
+                <input style="background-color: rgb(247, 9, 9); border-radius: 5px;" type="reset"  value="Reset" />
+    
+            </fieldset>
+        </form>
+    </center>
+
+    <script >
+
+        function dyn_window(){
+          var name= document.frm.txtName.value;
+           var addrs= document.frm.addr.value;
+           var txemal= document.frm.textEmail.value;
+           var txnum= document.frm.textNumber.value;
+
+           //For new window
+           win=open('','','width=300px,height=200px');
+
+            with(win.document){
+            write("Name    :......"+ name +"<br/>");
+            write("Number  :......"+txnum+"<br/>");
+            write("Email   :......"+ txemal +"<br/>");
+            write("Address :......"+addrs+"<br/>");
+  
+
+            write("<input type='button' value='close' onclick = 'self.close();' /> ");
+             write("<input type='button' value ='print' onclick = 'self.print();' /> ");
+
+           }
+
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

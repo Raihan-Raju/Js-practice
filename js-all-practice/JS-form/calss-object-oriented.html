@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calss-super</title>
+</head>
+<body>
+    
+
+
+    <script>
+        class bike {
+            constructor(){
+                this.company="Honda";
+                this. establist=" ,1948";
+            }
+        }
+        class vehicle extends bike {
+            constructor(name,price,cc){
+                 super();
+                this.name=name;
+                this.price=price;
+                this.cc=cc
+            }
+            show(){
+                return this.name+this.price+this.cc+this.company+this.establist;
+            }
+        }
+
+       
+        var v =new vehicle("range_rover ",846555550000,100);
+        var v1 =new vehicle("range_rover ",846555550000,190);
+        var v2=new vehicle("range_rover ",846555550000,110);
+        var v3=new vehicle("range_rover ",846555550000,120);
+       //document.write( v.company +" "+v.name+""+v.establist+" "+v.price);
+        var fainal=v.show();
+       
+        document.write(fainal);
+    </script>
+</body>
+</html>

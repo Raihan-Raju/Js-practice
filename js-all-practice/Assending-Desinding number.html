@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assending-Desinding number</title>
+</head>
+<body>
+    
+
+    <script>
+
+  //Desinding number   largh to small-----------------------      
+        let num1 = parseFloat(prompt("Enter the first number:"));
+let num2 = parseFloat(prompt("Enter the second number:"));
+let num3 = parseFloat(prompt("Enter the third number:"));
+
+if (num1 >= num2 && num1 >= num3) {
+    if (num2 >= num3) {
+        document.write("Descending Order: " + num1 + ", " + num2 + ", " + num3);
+    } else {
+        document.write("Descending Order: " + num1 + ", " + num3 + ", " + num2);
+    }
+}
+ else if (num2 >= num1 && num2 >= num3) {
+    if (num1 >= num3) {
+        document.write("Descending Order: " + num2 + ", " + num1 + ", " + num3);
+    } else {
+        document.write("Descending Order: " + num2 + ", " + num3 + ", " + num1);
+    }
+} 
+else {
+    if (num1 >= num2) {
+        document.write("Descending Order: " + num3 + ", " + num1 + ", " + num2);
+    } else {
+        document.write("Descending Order: " + num3 + ", " + num2 + ", " + num1);
+    }
+}
+
+
+
+
+//Assending number small to largh------------------------------
+
+// let num1 = parseFloat(prompt("Enter the first number:"));
+// let num2 = parseFloat(prompt("Enter the second number:"));
+// let num3 = parseFloat(prompt("Enter the third number:"));
+
+// if (num1 <= num2 && num1 <= num3) {
+//     if (num2 <= num3) {
+//         document.write("Ascending Order: " + num1 + ", " + num2 + ", " + num3);
+//     } else {
+//         document.write("Ascending Order: " + num1 + ", " + num3 + ", " + num2);
+//     }
+// } 
+// else if (num2 <= num1 && num2 <= num3) {
+//     if (num1 <= num3) {
+//         document.write("Ascending Order: " + num2 + ", " + num1 + ", " + num3);
+//     } else {
+//         document.write("Ascending Order: " + num2 + ", " + num3 + ", " + num1);
+//     }
+// }
+//  else {
+//     if (num1 <= num2) {
+//         document.write("Ascending Order: " + num3 + ", " + num1 + ", " + num2);
+//     } else {
+//         document.write("Ascending Order: " + num3 + ", " + num2 + ", " + num1);
+//     }
+// }
+
+    </script>
+</body>
+</html>

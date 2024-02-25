@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fabonacci serial</title>
+</head>
+<body>
+
+
+    <script>
+        //  let number=parseFloat(prompt("Pleace Enter  serial:"))
+        //  let first =0, second =1,
+        //   nextTerm;
+         
+        //   for (i = 0;i<number; i++){
+        //     nextTerm = first + second;
+        //     first=second;
+        //     second=nextTerm;
+        //     document.write( first+"," );
+        //   }
+
+        // let number=parseFloat(prompt("Pleace Enter  serial:"))
+        //  let first =0, second =1,
+        //   nextTerm;
+         
+        //   for (i = 0;i<number; i++){
+        //     nextTerm = first + second;
+        //     first=second;
+        //     second=nextTerm;
+        //     document.write( first+"," );
+        //   }
+
+
+        let number1=parseFloat(prompt("Pleace Enter  number1:"))
+        let number2=parseFloat(prompt("Pleace Enter  number2:"))
+        let number=parseFloat(prompt("Pleace Enter  Trarm : "))
+         let first =number1, second =number2, 
+         nextTerm;
+         document.write("Fibonacci Serial : ");
+          for (i = 0; i<number; i++){
+            document.write( first+ ",");
+            nextTerm = first + second;
+            first=second;
+            second=nextTerm;
+          }
+          
+         
+    </script>
+</body>
+</html>

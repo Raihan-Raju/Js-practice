@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class-object-funtion</title>
+</head>
+<body>
+    
+    <script>
+        class car{
+            constructor(name,color,price){
+                  this.name=name;
+                  this.color= color;
+                  this.price=price;
+            }
+            show(){
+                return this.name +""+this.color+" is runing  and this car price  :"+ this.price;
+            }
+        }
+        let newCar = new car("Range rover ","gray", +230000);
+        a = newCar.show();
+        document.write(a);
+        
+        // let human = new car("Range rover ","gray", +230000);
+        // a = newCar.show();
+        // document.write(a);
+
+        // let aroplan = new car("Range rover ","gray", +230000);
+        // a = newCar.show();
+        // document.write(a);
+
+        // let roket = new car("Range rover ","gray", +230000);
+        // a = newCar.show();
+        // document.write(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>large Small function</title>
+</head>
+<body>
+    <h1 style="text-align: center;">large / Small function</h1> <hr>
+
+
+    <script>
+    
+    
+    // var number=[-1,-2,-8,5,2,9,0,0,-9,0,10];
+    // nagative = number[0];
+    // possitive = number[0];
+    // zero = number[0];
+    // if(number>0){
+    //     document.write("possitive number=" number[0]);
+    // }
+    // else if(number<0){
+    //     document.write("Nagative number=" number);
+    // }
+    // else{
+    //     document.write("zero number=" number);
+    // }
+
+ //con-2=nagative-possitive   
+
+    // var numbers=[-1,-2,-8,5,2,9,0,0,-9,0,10];
+
+    // let nagative = [];
+    // let possitive = [];
+    // let zero = [];
+    // let sum=0;
+
+    // for (const number of numbers) {
+
+    //     if(number>0){
+    //         possitive.push(number)
+    //     }
+    //     else  if (number<0) {
+    //         nagative.push(number)
+            
+    //     }
+           
+    //     else{
+    //         zero.push(number)
+    //     }
+
+        
+    //     sum=sum+number
+        
+    
+    // }
+    // console.log(nagative.length)                                                                         
+    // console.log(possitive.length)
+    // console.log(zero.length)
+    // console.log(sum)
+
+
+
+//con-3=nagative-possitive
+
+    //   var number =parseFloat(prompt("pleace enter your number: "));
+    // var number =[4,5,8,68,79,1];
+    //      large = number[0];
+    //      small = number[0];
+    //      sum = number[0];
+    //      for (i=0; i<number.length; i++){
+    //         if (small>number[i]){
+    //             small=number[i];
+    //         }
+    //         if (large<number[i]){
+    //             large=number[i];
+
+    //         }
+    //         sum+= number[i];
+    //      }
+    //      document.write("small number :" +small+ "<br/>");
+    //      document.write("large number :" +large+ "<br/>");
+    //      document.write("Total number :" +sum);
+
+//con-4=nagative-possitive
+
+
+    //   var number = parseFloat(prompt("pleace Enter your Numbers:....."))
+    //   var number = [4,5,8,68,79,1];
+    //      large = number();
+    //      small = number();
+    //      sum = number();
+    //      for (i=0; i<number.length; i++){
+    //         if (small>number[i]){
+    //             small=number[i];
+    //         }
+    //         if (large<number[i]){
+    //             large=number[i];
+
+    //         }
+    //         sum+= number[i];
+    //      }
+    //      document.write("small number :" +small+ "<br/>");
+    //      document.write("large number :" +large+ "<br/>");
+    //      document.write("Total number :" +sum);
+
+
+
+
+       var number = [4,5,8,68,79,1,0];
+         possitive=0;
+         nagative=0;
+         zero=0;
+         sum=0;
+         for (i=0; i<number.length; i++){
+            if (number[i]>0){
+                possitive++;
+            }
+            else if (number[i]<0){
+                nagative++;
+
+            }
+            else{
+                zero++;  
+            }
+            sum+= number[i];
+         }
+         document.write("possitive number :" +possitive+ "<br/>");
+         document.write("nagative number :" +nagative+ "<br/>");
+         document.write("zero number :" +zero+ "<br/>");
+         document.write("Total number :" +sum);
+
+
+    </script>
+
+</body>
+</html>
